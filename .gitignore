@@ -1,0 +1,7 @@
+_build/
+_opam/
+data/
+reports/
+*.install
+.merlin
+.claude/

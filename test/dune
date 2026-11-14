@@ -1,0 +1,5 @@
+(tests
+ (names test_core test_replay test_sim)
+ (deps
+  (glob_files %{project_root}/fixtures/*))
+ (libraries tickwire alcotest qcheck qcheck-alcotest))

@@ -1,0 +1,18 @@
+; libgmp (needed by the TLS stack's big-number code) is linked statically so
+; the program runs outside the opam environment, e.g. from Task Scheduler,
+; without libgmp-10.dll on PATH.  The linker prefers the DLL import library
+; when both exist in a directory, so copy just the static archive here and
+; put this directory first on the search path.
+(rule
+ (targets libgmp.a)
+ (action
+  (run ocaml %{dep:copy_gmp.ml})))
+
+(executable
+ (name main)
+ (modules main)
+ (public_name tickwire)
+ (link_deps libgmp.a)
+ (link_flags
+  (-ccopt -Lbin))
+ (libraries tickwire tickwire_net cmdliner lwt lwt.unix unix))

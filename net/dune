@@ -1,0 +1,4 @@
+(library
+ (name tickwire_net)
+ (libraries tickwire lwt lwt.unix tls-lwt ca-certs mirage-crypto-rng
+  mirage-crypto-rng.unix unix))
