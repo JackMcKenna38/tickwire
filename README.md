@@ -107,3 +107,7 @@ Recordings take roughly 400 to 650 MB per hour of capture and are kept for 14 da
 
 - [docs/HOW_IT_WORKS.md](docs/HOW_IT_WORKS.md): plain-English explanation and every modelling assumption.
 - [docs/DESIGN.md](docs/DESIGN.md): design choices and their alternatives.
+
+## Licence
+
+MIT. See [LICENSE](LICENSE).

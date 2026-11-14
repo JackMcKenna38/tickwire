@@ -4,6 +4,8 @@
 
 (generate_opam_files true)
 
+(license MIT)
+
 (package
  (name tickwire)
  (synopsis "Honest market-making simulator on verified Kraken order books")
